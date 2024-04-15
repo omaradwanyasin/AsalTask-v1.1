@@ -7,7 +7,8 @@ namespace Domain.Services
     {
         TaskCategory GetTaskCategoryById(int categoryId);
         void CreateTaskCategory(TaskCategory category);
-        void UpdateTaskCategory(TaskCategory category);
+        void CreateTaskInCategory(Domain.Models.Task task, int categoryId);
+        void UpdateTaskCategory(TaskCategory category,int categoryId);
         void DeleteTaskCategory(int categoryId);
     }
 }

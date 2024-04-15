@@ -9,14 +9,14 @@ namespace Domain.Models
     public class TaskComment
     {
         public int Id { get; set; }
-        public int TaskId { get; set; } // Foreign key for Task
-        public int UserId { get; set; } // Foreign key for User
+        public int TaskId { get; set; } 
+        public int UserId { get; set; } 
         public string CommentText { get; set; }
         public DateTime CommentDate { get; set; }
        
         public TaskComment()
         {
-            CommentDate = DateTime.Now; // Set the comment date to the current date and time by default
+            CommentDate = DateTime.Now; 
         }
     }
 }
