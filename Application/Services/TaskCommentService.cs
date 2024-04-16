@@ -19,7 +19,8 @@ namespace Application.Services
             }
             _taskCommentsMap[taskId].Add(comment);
         }
-
+        //application busniss data //dto//not exist norable //entities => table in database//mapping  // 3 layers
+        //controlesrs statless
         public void DeleteComment(int commentId)
         {
             foreach (var taskComments in _taskCommentsMap.Values)

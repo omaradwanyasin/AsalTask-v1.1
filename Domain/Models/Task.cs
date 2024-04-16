@@ -15,7 +15,7 @@ namespace Domain.Models
         public string Description { get; set; }
         public DateTime DueDate { get; set; }
         public bool IsCompleted { get; set; }
-        public int CategoryId { get; set; } // Foreign key for TaskCategory
+        public int CategoryId { get; set; } 
         public List<TaskAssignment> Assignments { get; set; }
         public List<TaskComment> Comments { get; set; }
 
